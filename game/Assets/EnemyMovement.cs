@@ -1,22 +1,14 @@
 using UnityEngine;
+using System.Collections;
+
+
 
 public class EnemyMovement : MonoBehaviour
 {
-    public float speed = 3f;
-    private Transform player;
-
-    private void Start()
+ 
+    // Update is called once per frame
+    void Update()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-    }
-
-    private void Update()
-    {
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-        if (distanceToPlayer < 5f)
-        {
-            transform.LookAt(player);
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        }
+        transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 }

@@ -346,13 +346,17 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/EnemyMovement.cs"
+"Assets/lal.cs"
 "Assets/NewBehaviourScript.cs"
 "Assets/Player/BallController.cs"
 "Assets/Player/BallPickup.cs"
 "Assets/Player/BallPickup2.cs"
 "Assets/Player/BallPickup3.cs"
 "Assets/Player/BallPickup4.cs"
+"Assets/Player/EnemyController.cs"
+"Assets/Player/hhh.cs"
 "Assets/Player/PlayerMovement.cs"
+"Assets/PlayerHealth.cs"
 "Assets/ss.cs"
 -langversion:9.0
 
