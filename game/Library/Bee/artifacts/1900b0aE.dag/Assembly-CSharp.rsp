@@ -345,7 +345,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/EnemyMovement.cs"
 "Assets/lal.cs"
 "Assets/NewBehaviourScript.cs"
 "Assets/Player/BallController.cs"
@@ -358,6 +357,7 @@
 "Assets/Player/PlayerMovement.cs"
 "Assets/PlayerHealth.cs"
 "Assets/ss.cs"
+"Assets/test.cs"
 -langversion:9.0
 
 /deterministic

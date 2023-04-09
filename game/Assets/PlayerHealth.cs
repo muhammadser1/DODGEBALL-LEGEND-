@@ -13,7 +13,14 @@ public class PlayerHealth : MonoBehaviour
         // Set the initial value of the health slider to 100
         healthSlider.value = health;
     }
-
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.name == "Ball")
+        {
+            health -= 10;
+            healthSlider.value = health;
+        }
+    }
     void Update()
     {
         // Check for jump input and decrease health by 10
