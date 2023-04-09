@@ -352,6 +352,7 @@
 "Assets/Player/BallPickup2.cs"
 "Assets/Player/BallPickup3.cs"
 "Assets/Player/BallPickup4.cs"
+"Assets/Player/BallPickup5.cs"
 "Assets/Player/EnemyController.cs"
 "Assets/Player/hhh.cs"
 "Assets/Player/PlayerMovement.cs"

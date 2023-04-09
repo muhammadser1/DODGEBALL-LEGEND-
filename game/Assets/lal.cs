@@ -1,8 +1,10 @@
-using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
+
 public class lal : MonoBehaviour
 {
+    int hp1 = 0;
     public Slider healthSlider;
     private int health = 100;
 
@@ -12,26 +14,58 @@ public class lal : MonoBehaviour
         healthSlider.value = health;
     }
 
-    void Update()
-    {
-
-
-        // Check if player has hit a ball and decrease health by 10
-        // Replace "Ball" with the name of the object that represents the ball in your scene
-        // You can also use a tag instead of the object name
-        // For example, if you set the ball's tag to "Ball", you can use "other.gameObject.CompareTag("Ball")" instead of "other.gameObject.name == "Ball""
-       
-
-        if (health <= 0)
-        {
-        }
-    }
     void OnCollisionEnter(Collision other)
     {
+        if (other.gameObject.name == "FireBall")
+        {
+            StartCoroutine(ReduceHealthOverTime(1   , 0.1f));
+        }
         if (other.gameObject.name == "Ball1")
         {
             health -= 10;
             healthSlider.value = health;
+        }
+    }
+
+    IEnumerator ReduceHealthOverTime(int reductionPerSecond, float duration)
+    {
+        float elapsed = 0;
+        while (elapsed < duration)
+        {
+            health -= reductionPerSecond;
+            healthSlider.value = health;
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+    }
+
+    void Update()
+    {
+        // Check if health has reached 0 and restart game if it has
+        if (health <= 0)
+        {
+        }
+
+        if (hp1 == 0)
+        {
+            if (transform.position.x >= 24 && transform.position.x <= 26)
+            {
+                if (transform.position.y >= 0 && transform.position.y <= 2)
+                {
+                    if (transform.position.z >= 19 && transform.position.z <= 21)
+                    {
+                        health += 10;
+                        healthSlider.value = health;
+                        hp1++;
+                        GameObject obj = GameObject.Find("Bottle_Health");
+
+                        if (obj != null)
+                        {
+                            Destroy(obj);
+                        }
+                    }
+                }
+            }
         }
     }
 }

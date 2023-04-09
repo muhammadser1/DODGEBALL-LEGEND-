@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Ball1
   - Bottle_Health
+  - SpikeBall
+  - FireBall
   layers:
   - Default
   - TransparentFX
