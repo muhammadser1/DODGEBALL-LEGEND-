@@ -33,3 +33,5 @@ Unable to make any progress due to other commitments.
 
 ## Note:
 (Unfortunately, I encountered a bug when pushing some files to the repository. Despite my efforts, I was unable to fix it, possibly due to importing some files from Unity assets. As a solution, I have decided to create a new project without importing any files from Unity.)
+
+![](https://github.com/muhammadser1/DODGEBALL-LEGEND-/blob/main/BUG.png)
